@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Catálogo Leslie Shop</title>
+</head>
+<body>
+<h1>Catálogo Leslie Shop</h1>
+<script>
+fetch('productos.json').then(r=>r.json()).then(data=>{
+ document.body.insertAdjacentHTML('beforeend', JSON.stringify(data));
+});
+</script>
+</body>
+</html>
